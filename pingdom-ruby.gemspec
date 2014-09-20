@@ -30,13 +30,12 @@ Gem::Specification.new do |s|
   ]
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.7}
   s.summary = %q{Pingdom Ruby Client}
   s.test_files = [
     "spec/spec_helper.rb",
     "spec/pingdom-ruby_spec.rb"
   ]
-  s.requirements << 'faraday'
-  s.requirements << 'faraday_middleware-multi_json'
-  s.requirements << 'activesupport'
+  s.add_dependency('faraday')
+  s.add_dependency('faraday_middleware-multi_json')
+  s.add_dependency('activesupport')
 end
